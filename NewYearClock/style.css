@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.year {
+  position: absolute;
+  font-size: 28em;
+  font-family: 'Anton', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(245, 245, 245, 0.348);
+}
+body {
+  background-color: rgb(49, 49, 49);
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock_bg {
+  background-color: rgba(245, 245, 245, 0.548);
+  width: 400px;
+  height: 100px;
+  border-radius: 40px 10px 40px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.9em;
+}
+.heads {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 20px;
+  font-size: 2.75em;
+  font-family: cursive;
+}
+
+.foots {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.discp {
+  width: max-content;
+  font-size: 3em;
+  font-family: 'Caramel', cursive;
+  animation: types 5s linear;
+  overflow: hidden;
+  white-space: nowrap;
+  display: none;
+}
+@keyframes types {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+
+.hrr{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.hrr span{
+    font-size: 2.9em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media (max-width:1025px){
+    .heads {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 20px;
+        font-size: 1.5em;
+        top: 1.85em;
+        font-family: cursive;
+      }
+      .year {
+        position: absolute;
+        font-size: 12em;
+        font-family: 'Anton', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: .5em;
+        color: rgba(245, 245, 245, 0.348);
+    }
+    
+    .clock_bg {
+        background-color: rgba(245, 245, 245, 0.548);
+        width: 300px;
+        height: 60px;
+        border-radius: 40px 10px 40px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        text-align: center;
+        font-size: 1.25em;
+
+      }
+      
+      .foots {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 30px;
+      }
+      .discp {
+        width: max-content;
+        font-size: 1.25em;
+        font-family: 'Caramel', cursive;
+        animation: types 5s linear;
+        overflow: hidden;
+        white-space: nowrap;
+        display: none;
+      }
+      @keyframes types {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 40%;
+        }
+      }
+      
+      
+      .hrr{
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+      }
+      .hrr span{
+          font-size: 2.7em;
+          text-align: center;
+      }
+      
+
+
+}
+
+@media (max-width:599px){
+    .heads {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 20px;
+        font-size: 1.5em;
+        top: 2.85em;
+        font-family: cursive;
+      }
+      .year {
+        position: absolute;
+        font-size: 8em;
+        font-family: 'Anton', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 1.5em;
+        color: rgba(245, 245, 245, 0.348);
+    }
+    
+    .clock_bg {
+        background-color: rgba(245, 245, 245, 0.548);
+        width: 300px;
+        height: 60px;
+        border-radius: 40px 10px 40px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        text-align: center;
+        font-size: 1.25em;
+        margin-top: 130px;
+      }
+      
+      .foots {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 30px;
+      }
+      .discp {
+        width: max-content;
+        font-size: 1.25em;
+        font-family: 'Caramel', cursive;
+        animation: types 5s linear;
+        overflow: hidden;
+        white-space: nowrap;
+        display: none;
+      }
+      @keyframes types {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 40%;
+        }
+      }
+      
+      
+      .hrr{
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+      }
+      .hrr span{
+          font-size: 2.7em;
+          text-align: center;
+      }
+      
+
+
+}
